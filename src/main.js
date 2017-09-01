@@ -1,5 +1,5 @@
 /** CSS */
-import './sass/style.sass';
+import './sass/kube.sass';
 import './sass/editor.sass';
 
 /** JS */
