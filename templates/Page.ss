@@ -7,15 +7,16 @@
 </head>
 <body id="Body$ClassName">
 <div id="Wrapper">
-    <header>
-        <a href="/" class="home-button">$SiteConfig.Title</a>
-        <% include Navigation %>
-        <a href="#" class="menu-button">menu</a>
+    <header id="header">
+        <div class="container">
+            <a href="/" class="home-button">$SiteConfig.Title</a>
+            <% include Navigation %>
+            <a href="#" data-component="offcanvas" data-target="#offcanvas-left" id="menu-button">Menu</a>
+        </div>
     </header
     <div id="Layout">
         <% include Breadcrumbs %>
-        <div id="page-holder">
-            <% include CallToAction %>
+        <div id="page-holder" class="container">
             $Layout
         </div>
         <% include Footer %>

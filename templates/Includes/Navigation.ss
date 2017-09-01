@@ -1,32 +1,34 @@
-<nav id="main-menu">
-    <a href="#" class="close-menu">×</a>
-    <ul id="Nav">
-<% loop Menu(1) %>
-        <li class="$FirstLast">
-            <a href="$Link" class="$LinkingMode">$MenuTitle</a>
-        <% if ChildrenShowInMenu %>
-        <ul>
-            <% loop ChildrenShowInMenu %>
-                <% if ShowInMenus %>
-            <li class="$FirstLast">
-                <a href="$Link" class="$LinkingMode">$MenuTitle</a>
-                        <% if ChildrenShowInMenu %>
-                <ul>
+<div id="offcanvas-left" class="hide">
+    <a href="#" class="close big"></a>
+    <nav>
+        <ul id="Nav">
+            <% loop Menu(1) %>
+                <li class="$FirstLast">
+                    <a href="$Link" class="$LinkingMode">$MenuTitle</a>
+                    <% if ChildrenShowInMenu %>
+                        <ul>
                             <% loop ChildrenShowInMenu %>
                                 <% if ShowInMenus %>
-                        <li class="$FirstLast">
-                            <a href="$Link" class="$LinkingMode">$MenuTitle</a>
-                        </li>
+                                    <li class="$FirstLast">
+                                        <a href="$Link" class="$LinkingMode">$MenuTitle</a>
+                                        <% if ChildrenShowInMenu %>
+                                            <ul>
+                                                <% loop ChildrenShowInMenu %>
+                                                    <% if ShowInMenus %>
+                                                        <li class="$FirstLast">
+                                                            <a href="$Link" class="$LinkingMode">$MenuTitle</a>
+                                                        </li>
+                                                    <% end_if %>
+                                                <% end_loop %>
+                                            </ul>
+                                        <% end_if %>
+                                    </li>
                                 <% end_if %>
                             <% end_loop %>
-                </ul>
-                        <% end_if %>
-            </li>
-                <% end_if %>
+                        </ul>
+                    <% end_if %>
+                </li>
             <% end_loop %>
         </ul>
-        <% end_if %>
-        </li>
-<% end_loop %>
-    </ul>
-</nav>
+    </nav>
+</div>

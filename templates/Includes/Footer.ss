@@ -1,6 +1,6 @@
 <footer id="footer">
 
-    <div class="row">
+    <div class="container">
 
         <div id="FooterContactInfo" class="footer-col typography">
             <ul>
