@@ -1,0 +1,177 @@
+/*
+
+BEST: https://coolors.co/9e0914-031927-8ea604-508aa8-ec9f05
+
+https://coolors.co/9e0914-8ea604-f5bb00-ec9f05-d76a03
+
+https://coolors.co/9e0914-031927-9dd1f1-508aa8-c8e0f4
+
+https://coolors.co/9e0914-f4e409-eeba0b-c36f09-a63c06
+
+https://coolors.co/9e0914-223127-ce5374-dbbbf5-ddf0ff
+ */
+html {
+    height: 100%;
+    background-color: $BackgroundColour;
+}
+
+body {
+    min-height: 100%;
+    font-family: $TextFont;
+    background-color: $BackgroundColour;
+}
+
+#Wrapper {
+    min-height: 100vh;
+}
+
+
+
+#page-holder {
+    margin-top: calc(64px + 30px);
+    padding-bottom: 64px;
+    min-height: 800px;
+}
+
+#MaintContent {
+    overflow: auto;
+}
+
+#MySidebarImage img{
+    border-color: $Accent1Colour;
+    width: calc(100% - 22px);
+}
+/**
+
+
+
+
+
+/**
+ * columns: http://stackoverflow.com/questions/20566660/3-column-layout-html-css
+ */
+
+
+#MainDetails > main {
+    margin-top: 30px;
+}
+
+#MainDetails .content-padding {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+    padding: 10px;
+}
+#MainDetails.one  main {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.full-width-content .content-padding {
+    padding: 40px calc(15px + 1%) 0;
+    @include bp(min-md){
+        padding: 40px calc(15px + 1%) 0;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    #MainDetails .content-padding {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #MainDetails > main {
+        margin-top: 0px;
+    }
+
+    #MainDetails > main,
+    #MainDetails > aside,
+    #MainDetails > section {
+        width: 50%;
+    }
+
+    #MainDetails > main {
+        float: left;
+    }
+
+    #MainDetails aside {
+        float: right;
+    }
+
+    #MainDetails.two > section,
+    #MainDetails.three > section {
+        clear: left;
+        float: left;
+    }
+
+    #MainDetails .content-padding {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px;
+        padding: 40px 20px;
+    }
+    footer#footer .footer-col {
+        width: 41%;
+        padding-left: 3%;
+        padding-right: 3%;
+        float: left;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    #MainDetails {
+        padding-top: 30px;
+        .content-padding {
+            padding: 30px 40px;
+        }
+    }
+}
+@media screen and (min-width: 1550px) {
+    #MainDetails {
+        padding-top: 50px;
+    }
+    #MainDetails > section {
+        float: right;
+    }
+
+    #MainDetails > aside {
+        float: left;
+    }
+
+    #MainDetails.two {
+        > section,
+        > main,
+        > aside {
+            width: 50%;
+            clear: none;
+        }
+        // .full-width-content .content-padding {
+        //     max-width: calc((100% - 1100px)/2 + 1100px);
+        //     padding: 40px 40px 0;
+        // }
+    }
+
+
+
+    #MainDetails.three {
+        > section,
+        > main,
+        > aside {
+            width: 33.3%;
+            clear: none;
+        }
+    }
+
+    #MainDetails .content-padding {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px;
+        padding: 30px 40px;
+    }
+}
