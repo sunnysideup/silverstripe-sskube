@@ -1,2 +1,1 @@
-<section id="SecondColumn">
-    <div class="typography content-padding">
+do not use!

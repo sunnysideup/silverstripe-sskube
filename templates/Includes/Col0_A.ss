@@ -1,2 +1,2 @@
-<div class="clearfix full-width-content row">
-    <div class="content-padding centercolumn typography">
+<section class="clearfix full-width-content col col-12">
+    <div class="typography content-padding">

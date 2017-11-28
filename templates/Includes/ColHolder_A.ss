@@ -1,1 +1,1 @@
-<div class="clearfix $NumberOfColumns" id="MainDetails">
+<div class="clearfix row gutters" id="MainDetails">
